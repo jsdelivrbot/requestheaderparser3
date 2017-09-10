@@ -19,6 +19,10 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+app.get(api, function(request, response){
+  console.log("100");
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
