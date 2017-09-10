@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
 var api = 'api/whoami'
 
 app.get('/', function(request, response) {
-
+  console.log('300');
   response.render('pages/index');
 });
 
