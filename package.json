@@ -4,7 +4,7 @@
   "description": "A sample Node.js app using Express 4",
   "engines": {
     "node": "6.11.1",
-    "npm":"2.1.1"
+    "npm": "2.1.1"
   },
   "main": "index.js",
   "scripts": {
@@ -12,10 +12,11 @@
     "test": "node test.js"
   },
   "dependencies": {
+    "body-parser": "1.0.0",
+    "cors": "2.8.4",
     "ejs": "2.5.6",
     "express": "4.15.2",
-    "body-parser": "1.0.0",
-    "cors": "2.8.4"
+    "express-useragent": "^1.0.7"
   },
   "devDependencies": {
     "request": "^2.81.0",
