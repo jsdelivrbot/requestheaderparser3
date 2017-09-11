@@ -22,11 +22,11 @@ app.get('/', function(request, response) {
 });
 
 app.get(api, function(request, response){
-  var language = request.acceptsLanguage();
+  var language = "en";
   var software = "OS: " + request.useragent.os + ", Browser: " + request.useragent.browser;
   var ipaddress = request.ip;
 
-  response.json({'ipaddress': ipaddress, 'software': software, language:'language'})
+  response.json({'ipaddress': ipaddress, 'software': software, 'language':language})
 });
 
 app.listen(app.get('port'), function() {
