@@ -26,7 +26,7 @@ app.get(api, function(request, response){
   var software = "OS: " + request.useragent.os + ", Browser: " + request.useragent.browser;
   var ipaddress = request.ip;
 
-  response.json({'ipaddress': ipaddress, 'software': software})
+  response.json({'ipaddress': ipaddress, 'software': software, language:'language'})
 });
 
 app.listen(app.get('port'), function() {
